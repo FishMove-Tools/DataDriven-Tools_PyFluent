@@ -1,8 +1,19 @@
-![image](https://github.com/FishMove-Tools/DataDriven-Tools_PyFluent/blob/main/CFD%20train%20stage/Two_stage_training_pipeline.png)
-
-# FishMove Tools
+<div>
+  <h1>
+    🐠 FishMove Tools&nbsp;&nbsp;&nbsp;
+    <span style="float: right; font-size: 16px; font-weight: normal; margin-top: 10px;">
+     <b>English</b> | <a href="README_zh.md">🇨🇳 中文</a>
+    </span>
+  </h1>
+</div>
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=21&pause=500&color=677BF7&center=%E5%81%87&vCenter=%E5%81%87&multiline=true&repeat=%E7%9C%9F&random=%E5%81%87&width=480&height=60&lines=Welcome+to+FishMove+Toolkit!;%E6%AC%A2%E8%BF%8E%E4%BD%BF%E7%94%A8FishMove%E7%B3%BB%E5%88%97%E5%B7%A5%E5%85%B7)](https://git.io/typing-svg)
+
+<p align="center">
+  <img src="https://github.com/FishMove-Tools/DataDriven-Tools_PyFluent/blob/main/CFD%20train%20stage/Two_stage_training_pipeline.png?raw=true" width="100%">
+</p>
+
+
 ### 🧠 Tech Stack / Tags
 
 ![](https://img.shields.io/badge/DeepRL-%23369FF7FF)  ![](https://img.shields.io/badge/BioRobotics-%23669FF7FF)  ![](https://img.shields.io/badge/Control-%23766BF7FF)  ![](https://img.shields.io/badge/FluidSimulation-%23766BF7FF)  ![](https://img.shields.io/badge/FishModeling-%23669FF7FF)  ![](https://img.shields.io/badge/GymEnv-%2366BB66FF)
