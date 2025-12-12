@@ -142,7 +142,8 @@ Pyfluent offers two ways to interact with Fluent:
 
 
 ## 📝 TODO List
-- \[x\] Release Release policy fine-tuning part with pyfluent interface.
-- \[ \] Release pre-training code.
+- \[x\] Release Release CFD train fine-tuning part with pyfluent interface.
+- \[ \] Release First Stage pre-training code.
+- \[ \] Release Second Stage pre-training code.
 - \[ \] Release the PD-FS framework.
 - \[ \] Release the paper with demos.
