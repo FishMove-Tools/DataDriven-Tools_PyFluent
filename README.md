@@ -2,7 +2,7 @@
   <h1>
     🐠 FishMove Tools&nbsp;&nbsp;&nbsp;
     <span style="float: right; font-size: 16px; font-weight: normal; margin-top: 10px;">
-     <b>English</b> | <a href="README_zh.md">🇨🇳 中文</a>
+     <b>English</b> | <a href="README_zh.md"> 中文</a>
     </span>
   </h1>
 </div>
