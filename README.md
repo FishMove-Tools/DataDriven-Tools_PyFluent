@@ -52,6 +52,10 @@ Key features of this toolkit include:
 
 ### Installation
 
+The installation is divided into two main parts: Python Environment Setup and Pyfluent Setup.
+
+#### 1. Python Environment Setup
+
 It is recommended to use Conda to create an isolated environment for installation.
 
 1.  **Create and Activate Conda Environment:**
@@ -72,14 +76,13 @@ It is recommended to use Conda to create an isolated environment for installatio
     pip install torch==2.1.0
     pip install stable-baselines3[extra]
     
-    # Install Ansys Fluent Python interface
+    # Install Pyfluent package
     pip install ansys-fluent-core
     
     # Adjust Pandas version (to prevent conflicts)
     pip uninstall pandas -y
     pip install pandas==2.2.2
     ```
-    > ⚠️ **Note:** Installation of `ansys-fluent-core` requires your local **ANSYS Fluent** environment to be correctly configured.
 
 3.  **Clone the Project Repository:**
 
@@ -90,6 +93,48 @@ It is recommended to use Conda to create an isolated environment for installatio
     # Install FishMove Tools package itself (if applicable)
     # pip install -e . 
     ```
+
+#### 2. Pyfluent Setup
+
+The `ansys-fluent-core` package allows seamless control of ANSYS Fluent from Python.
+
+**A. Pyfluent Installation and Documentation**
+
+* The Python package for Pyfluent is installed via `pip install ansys-fluent-core` (completed in the step above).
+* For detailed documentation and installation guides regarding ANSYS Fluent and the Pyfluent package, refer to the official repository: [https://github.com/leigq/pyfluent](https://github.com/leigq/pyfluent).
+
+**B. Controlling Fluent via Python (Jupyter)**
+
+Pyfluent commands are executed through a Python session (e.g., in a Jupyter Notebook) to control the CFD simulation:
+
+| Operation | Command | Description |
+| :--- | :--- | :--- |
+| **Import** | `import ansys.fluent.core as pyfluent` | Imports the core library. |
+| **Launch (No GUI)** | `session = pyfluent.launch_fluent()` | Starts Fluent without the graphical user interface. |
+| **Launch (With GUI)** | `session = pyfluent.launch_fluent(show_gui = True)` | Starts Fluent with the GUI enabled (only available in meshing mode). |
+| **Exit** | `session.exit()` | Closes the Fluent session. |
+
+**C. Interaction Modes**
+
+* **Meshing Mode:** Supports GUI interaction.
+* **Solution Mode:** Only supports Text User Interface (TUI) interaction.
+* **Loading Mesh Example (TUI):** `session.tui.file.read_case("mesh fish .msh")`
+
+**D. Pyfluent Journaling (Code Generation)**
+
+Pyfluent supports journaling to automatically generate Python code from TUI commands:
+
+1.  Launch Fluent (e.g., `session = pyfluent.launch_fluent()`).
+2.  In the Fluent TUI console, start recording the journal: `(api-start-python-journal "python_journal.py")`
+3.  Perform parameter settings and commands via the TUI. The corresponding Python code will be written to `python_journal.py` in the working directory.
+4.  Stop recording: `(api-stop-python-journal)`
+5.  This generated Python code can be modified and used directly within your Pyfluent scripts in Jupyter for configuration.
+
+**E. Command APIs**
+
+Pyfluent offers two ways to interact with Fluent:
+* **TUI API:** Mimics the traditional TUI console commands (e.g., `session.tui.file.read_case`).
+* **Settings API:** Based on a hierarchical (tree-like) structure for settings (still under development).
 
 ---
 
