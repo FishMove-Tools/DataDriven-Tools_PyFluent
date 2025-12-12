@@ -21,12 +21,8 @@ We plan to perform pre-training in a fast simulation environment（Gym and train
 Undoubtedly, the results are remarkable！  
 
 
-### 2025/3/25 修改日志  
-在前期的修改中，我们已经完成了工具的基本框架，详情可见3.26汇报PPT。  
-
-其中，有一些值得关注的技术细节：  
-  1.在PPO与CFD的EVN中，我们对动作进行了裁剪，即限制每次动作的变化不能超过1从而防止CFD环境中负网格的出现。  
-  2.我们在快速仿真环境中选择的动作步数是300步，而CFD中为3000步。这意味着切换到CFD后每个动作将重复10次，最后达到的时间为15s。  
-  
-同时，有一些待解决的问题也值得考究：  
-  1.我们已经发现动作的变化会导致涡结构异常，使推进力大幅下降，我们判定这是从数据驱动切换至CFD产生的GAP。主要问题有两点：切换动作并非在平衡位置导致涡位置不在水平线；不同动作的涡相互影响。
+## 📝 TODO List
+- \[x\] Release Release policy fine-tuning part with pyfluent interface.
+- \[ \] Release pre-training code.
+- \[ \] Release the PD-FS framework.
+- \[ \] Release the paper with demos.
