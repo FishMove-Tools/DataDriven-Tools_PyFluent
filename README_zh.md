@@ -2,7 +2,7 @@
   <h1>
     🐠 FishMove Tools&nbsp;&nbsp;&nbsp;
     <span style="float: right; font-size: 16px; font-weight: normal; margin-top: 10px;">
-      <a href="README.md"> 🌎 English </a> | <b>中文</b>
+      <a href="README.md">  English </a> | <b>中文</b>
     </span>
   </h1>
 </div>
@@ -127,4 +127,5 @@ FishMove Toolkit 是一个专注于**仿生水下机器人控制**和**数据驱
 - [ ] 发布带有演示视频的论文。
 
 ---
+
 
